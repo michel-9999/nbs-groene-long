@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plant mee aan De Groene Long van Vlaanderen en volg hoeveel bomen, struiken en fruithoekjes al werden aangeplant.">
+  <title>De Groene Long van Vlaanderen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="top-bar" aria-label="Hoofdnavigatie">
+      <a class="brand-link" href="https://www.boomgaardenstichting.be/" target="_blank" rel="noopener" aria-label="De Nationale Boomgaardenstichting">
+        <img src="assets/nbs_logo.png" alt="De Nationale Boomgaardenstichting" class="brand-logo">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <p class="eyebrow">Samen vergroenen we Vlaanderen</p>
+        <h1>De Groene Long van Vlaanderen</h1>
+        <p class="hero-lead">
+          Plant mee. Elke boom, elke struik en elk eetbaar hoekje telt mee voor meer groen, meer biodiversiteit en meer leven.
+        </p>
+
+        <div class="hero-actions">
+          <a href="mailto:info@boomgaardenstichting.be?subject=Bestelling De Groene Long van Vlaanderen" class="button button-primary">Bestel je boom</a>
+          <a href="#stand" class="button button-secondary">Bekijk de stand</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/groene_long_1.png" alt="" class="hero-image hero-image-main">
+      </div>
+    </section>
+
+    <section id="stand" class="progress-section" aria-labelledby="progress-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Live teller</p>
+        <h2 id="progress-heading">Zo groeit de Groene Long</h2>
+      </div>
+
+      <article class="total-card">
+        <div>
+          <p class="card-label">Totaal aangeplant</p>
+          <p class="total-number"><span id="total-current">0</span><span class="muted"> / </span><span id="total-target">0</span></p>
+        </div>
+        <meter id="total-meter" min="0" max="1" value="0"></meter>
+        <p class="percentage"><span id="total-percentage">0%</span> voltooid</p>
+      </article>
+
+      <div class="category-grid" id="category-grid" aria-label="Voortgang per categorie"></div>
+    </section>
+
+    <section class="info-section">
+      <article class="info-card">
+        <h2>Waarom meedoen?</h2>
+        <p>Samen bouwen we aan één grote, levende long — gemaakt uit duizenden kleine stukjes groen in tuinen, boomgaarden en eetbare hoekjes.</p>
+      </article>
+
+      <article class="info-card accent-card">
+        <h2>Wat is een fruithoekje?</h2>
+        <p>Een kleine aanplanting met eetbare planten zoals bessen, druiven, frambozen, bramen, kruiden of kleinfruit. Ook enkele struiken of klimplanten tellen mee.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Een initiatief van</div>
+    <a href="https://www.boomgaardenstichting.be/" target="_blank" rel="noopener">De Nationale Boomgaardenstichting</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
